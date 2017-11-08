@@ -1,0 +1,19 @@
+package:
+  name: c-ares
+  version: 1.13.0
+
+source:
+  url: https://c-ares.haxx.se/download/c-ares-1.13.0.tar.gz
+  md5: d2e010b43537794d8bedfb562ae6bba2
+  sha1: dde50284cc3d505fb2463ff6276e61d5531b1d68 
+  sha256: 03f708f1b14a26ab26c38abd51137640cb444d3ec72380b21b20f1a8d2861da7
+
+build:
+  # If the installation is complex, or different between Unix and Windows, use
+  # separate bld.bat and build.sh files instead of this key.  Add the line
+  # "skip: True  # [py<35]" (for example) to limit to Python 3.5 and newer, or
+  # "skip: True  # [not win]" to limit to Windows.
+
+requirements:
+  build:
+    - toolchain
